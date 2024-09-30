@@ -1,0 +1,472 @@
+@font-face {
+    font-family: roboto regular;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: roboto medium;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: blackcraft;
+    src: url(fonts/Blackcraft.ttf);
+}
+@font-face {
+    font-family: roboto light;
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+body {
+    background-image: url(images/background_main.png);
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-size: 100vw auto;
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+.real_header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+}
+
+.logo_header {
+    display: inline-flex;
+}
+
+.logo_header:hover .back_logo {
+    animation: spinLogo 0.7s ease-in-out forwards;
+}
+
+.img_header {
+    position: relative;
+    width: 4vw;
+    height: auto;
+}
+
+.back_logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.front_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: auto;
+}
+
+.logo_header h1 {
+    margin: 0 0 0 1vw;
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+.h1_header_1 {
+    font-family: roboto regular;
+    color: #090209;
+}
+
+.h1_header_2 {
+    font-family: blackcraft;
+    color: #9B69C8;
+}
+
+.buttons_header {
+    display: inline-flex;
+}
+
+.buttons_header a div {
+    border: 3px solid #8E64C1;
+    border-radius: 4vw;
+    width: 10vw;
+    height: 2.6vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: border-color 0.3s ease;
+}
+
+.buttons_header a {
+    color: #090209;
+    text-decoration: none;
+    margin: 0.5vw;
+}
+
+.buttons_header div:hover {
+    border-color: #090209;
+    cursor: pointer;
+}
+
+.buttons_header div:active {
+    transform: scale(0.95);
+}
+
+.vissually_impaired img{
+    width: 3vw;
+    height: auto;
+}
+
+.login p {
+    margin: 0px;
+    font-family: roboto regular;
+    font-size: 2vw;
+}
+
+@keyframes spinLogo {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    33.33% {
+        transform: translate(-50%, -50%) rotate(-30deg) scale(0.96);
+        animation-timing-function: ease-in;
+    }
+
+    80% {
+        transform: translate(-50%, -50%) rotate(330deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        animation-timing-function: ease-out;
+    }
+}
+
+.title_header {
+    width: 100vw;
+    height: 123vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.title_header img {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0px;
+}
+
+#wave_header_front1 {
+    left: 0%;
+    animation: wave_animation1 10s linear infinite;
+}
+
+#wave_header_front2 {
+    left: -100%;
+    animation: wave_animation2 10s linear infinite;
+}
+
+#wave_header_back1 {
+    left: 0%;
+    animation: wave_animation1 17s linear infinite;
+}
+
+#wave_header_back2 {
+    left: -100%;
+    animation: wave_animation2 17s linear infinite;
+}
+
+@keyframes wave_animation1 {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes wave_animation2 {
+    0% {
+        transform: translateX(1vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+.title_header p {
+    position: absolute;
+    top: 5vw;
+    left: 5vw;
+    font-size: 5vw;
+    width: 60%;
+    color: #F9FAFF;
+    font-family: roboto medium;
+    animation: title_move 1s linear;
+    cursor: default;
+}
+
+@keyframes title_move {
+    0% {
+        color: rgba(255, 255, 255, 0);
+        left: 0vw;
+    }
+
+    100% {
+        color: #F9FAFF;
+        left: 4.5vw;
+    }
+}
+
+.progs {
+    position: relative;
+}
+
+.h1_main {
+    font-family: roboto medium;
+    margin: 1vh 4vw 1vw 4vw;
+    font-size: 5vw;
+}
+
+.h1_main:hover {
+    cursor: default;
+}
+
+.progs_list_center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin-block: 4vw;
+}
+
+.progs_list {
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2vw;
+}
+
+.prog_card {
+    width: 100%;
+    height: 16vw;
+    border: #090209 solid 3px;
+    border-radius: 3vw;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.8vw);
+    overflow: hidden;
+    flex-direction: column;
+    transition: all 0.2s ease;
+}
+
+.prog_card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.decoration_prog_card_science {
+    width: 3vw;
+    height: 100%;
+    border-right: #090209 solid 3px;
+    background-color: rgba(237, 182, 1, 0.5);
+    position: absolute;
+    display: flex;
+    left: 0; top: 0;
+}
+.decoration_prog_card_sport {
+    width: 3vw;
+    height: 100%;
+    border-right: #090209 solid 3px;
+    background-color: rgba(142, 100, 193, 0.5);
+    position: absolute;
+    display: flex;
+    left: 0; top: 0;
+}
+.decoration_prog_card_art {
+    width: 3vw;
+    height: 100%;
+    border-right: #090209 solid 3px;
+    background-color: rgba(138, 12, 60, 0.5);
+    position: absolute;
+    display: flex;
+    left: 0; top: 0;
+}
+
+.prog_card h2 {
+    font-size: 2vw;
+    margin: 1vw;
+    padding-left: 3vw;
+    font-family: roboto regular;
+}
+
+.prog_card p {
+    font-size: 1.7vw;
+    margin: 1vw;
+    padding-left: 3vw;
+    font-family: roboto regular;
+}
+
+.watch_all {
+    font-family: roboto regular;
+    margin: 1vh 4vw 1vw 4vw;
+    font-size: 2vw;
+    color: #090209;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.watch_all:hover {
+    font-size: 2.05vw;
+}
+
+.news {
+    margin-top: 5vw;
+}
+
+.news_list_center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin-block: 4vw;
+}
+
+.news_list {
+    width: 80vw;
+    height: auto;
+    display: grid;
+    gap: 2vw;
+}
+
+.news_card {
+    width: 100%;
+    height: 16vw;
+    border: #090209 solid 3px;
+    border-radius: 3vw;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.8vw);
+    overflow: hidden;
+    flex-direction: row;
+    transition: all 0.2s ease;
+}
+
+.news_card img {
+    width: 25vw;
+    height: 100%;
+    border-right: #090209 solid 3px;
+    position: absolute;
+    display: flex;
+    left: 0; top: 0;
+}
+
+.news_card h2 {
+    font-size: 2vw;
+    margin: 1vw;
+    padding-left: 25vw;
+    font-family: roboto regular;
+}
+
+.news_card p {
+    font-size: 1.7vw;
+    margin: 1vw;
+    padding-left: 25vw;
+    font-family: roboto regular;
+}
+
+.news_card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+footer, .ps {
+    margin-top: 5vw;
+    border: #090209 solid 3px;
+    border-radius: 4vw;
+    width: 91vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.8vw);
+    padding: 3vw 4vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo_footer h1 {
+    margin: 0 0 0 0.8vw;
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+.img_footer {
+    width: 3vw;
+}
+
+.altair, .contacts, .info, .olimps, .social_media {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+footer a {
+    padding: 1vw 0 0 3.8vw;
+    text-decoration: none;
+    font-family: roboto light;
+    font-size: 1.5vw;
+    color: #090209;
+}
+
+footer a:hover {
+    font-size: 1.6vw;
+}
+
+.colomn1, .colomn2 {
+    display: grid;
+    gap: 3vw;
+}
+
+.row_social_media {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 3.8vw;
+    gap: 1vw;
+}
+
+.social_media_card {
+    width: 3vw; height: 3vw;
+    border: #8E64C1 solid 3px;
+    margin: 1vw 0 0 0;
+    border-radius: 50%;
+    position: relative;
+}
+
+.social_media_card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: auto;
+    transition: all 0.2s ease;
+}
+
+.social_media_card:hover {
+    transform: scale(1.05);
+}
+
+.ps {
+    border-radius: 4vw 4vw 0 0;
+    justify-content: space-between;
+    margin-top: 1vw;
+}
+
+.ps a {
+    font-family: roboto regular;
+    margin: 0 1vw;
+    font-size: 2vw;
+    text-decoration: none;
+    color: #090209;
+}
