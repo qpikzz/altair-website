@@ -319,7 +319,7 @@ body {
 }
 
 .watch_all:hover {
-    font-size: 2.05vw;
+    text-decoration: underline;
 }
 
 .news {
@@ -420,7 +420,7 @@ footer a {
 }
 
 footer a:hover {
-    font-size: 1.6vw;
+    text-decoration: underline;
 }
 
 .colomn1, .colomn2 {

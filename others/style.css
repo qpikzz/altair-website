@@ -1,0 +1,243 @@
+@font-face {
+    font-family: roboto regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: roboto medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: blackcraft;
+    src: url(../fonts/Blackcraft.ttf);
+}
+@font-face {
+    font-family: roboto light;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+body {
+    margin: 0;
+    background-image: url(images/background.png);
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-size: 100vw auto;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh;
+    background-color: #8E64C1;
+}
+
+.logo_header {
+    display: inline-flex;
+}
+
+.logo_header:hover .back_logo {
+    animation: spinLogo 0.7s ease-in-out forwards;
+}
+
+.img_header {
+    position: relative;
+    width: 4vw;
+    height: auto;
+}
+
+.back_logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.front_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: auto;
+}
+
+.logo_header h1 {
+    margin: 0 0 0 1vw;
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+.h1_header_1 {
+    font-family: roboto regular;
+    color: #F9FAFF;
+}
+
+.h1_header_2 {
+    font-family: blackcraft;
+    color: #FFE366;
+}
+
+.buttons_header {
+    display: inline-flex;
+}
+
+.buttons_header a div {
+    border: 3px solid #F9FAFF;
+    border-radius: 4vw;
+    width: 10vw;
+    height: 2.6vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: border-color 0.3s ease;
+}
+
+.buttons_header a {
+    color: #F9FAFF;
+    text-decoration: none;
+    margin: 0.5vw;
+}
+
+.buttons_header div:hover {
+    border-color: #FFE366;
+    cursor: pointer;
+}
+
+.buttons_header div:active {
+    transform: scale(0.95);
+}
+
+.vissually_impaired img{
+    width: 3vw;
+    height: auto;
+}
+
+.login p {
+    margin: 0px;
+    font-family: roboto regular;
+    font-size: 2vw;
+}
+
+@keyframes spinLogo {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    33.33% {
+        transform: translate(-50%, -50%) rotate(-30deg) scale(0.96);
+        animation-timing-function: ease-in;
+    }
+
+    80% {
+        transform: translate(-50%, -50%) rotate(330deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        animation-timing-function: ease-out;
+    }
+}
+
+main {
+    padding: 5vw 7vw;
+    font-family: roboto regular;
+    font-size: 3vw;
+}
+
+.link img {
+    width: 4vw;
+    height: 4vw;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    margin: 2vw 0;
+    color: #090209;
+}
+
+.link p {
+    margin: 0 1vw;
+    color: #090209;
+}
+
+.link a {
+    margin: 0 1vw;
+    text-decoration: none;
+    color: #090209;
+}
+
+footer {
+    margin-top: 5vw;
+    width: 91vw;
+    background-color: #8E64C1;
+    padding: 3vw 4vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo_footer h1 {
+    margin: 0 0 0 0.8vw;
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+.img_footer {
+    width: 3vw;
+}
+
+.altair, .contacts, .info, .olimps, .social_media {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+footer a {
+    padding: 1vw 0 0 3.8vw;
+    text-decoration: none;
+    font-family: roboto light;
+    font-size: 1.5vw;
+    color: #F9FAFF;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.colomn1, .colomn2 {
+    display: grid;
+    gap: 3vw;
+}
+
+.row_social_media {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 3.8vw;
+    gap: 1vw;
+}
+
+.social_media_card {
+    width: 3vw; height: 3vw;
+    border: #F9FAFF solid 3px;
+    margin: 1vw 0 0 0;
+    border-radius: 50%;
+    position: relative;
+}
+
+.social_media_card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: auto;
+    transition: all 0.2s ease;
+}
+
+.social_media_card:hover {
+    transform: scale(1.05);
+}
