@@ -145,18 +145,36 @@ header {
 main {
     padding: 5vw 7vw;
     font-family: roboto regular;
-    font-size: 3vw;
+    font-size: 2vw;
+    
+}
+
+main h2 {
+    font-size: 4vw;
+    font-weight: 200;
+    margin: 4vw 0 1.5vw 0;
+}
+
+main h1 {
+    font-size: 5vw;
+    font-family: roboto medium;
+    font-weight: 100;
+}
+
+main p {
+    font-size: 2vw;
+    margin: 1.5vw 0 1.5vw 0;
 }
 
 .link img {
-    width: 4vw;
-    height: 4vw;
+    width: 2vw;
+    height: 2vw;
 }
 
 .link {
     display: flex;
     flex-direction: row;
-    margin: 2vw 0;
+    margin: 1.5vw 0;
     color: #090209;
 }
 
@@ -169,6 +187,11 @@ main {
     margin: 0 1vw;
     text-decoration: none;
     color: #090209;
+    transition: all 0.2s ease;
+}
+
+.link a:hover {
+    color: #8E64C1;
 }
 
 footer {
@@ -202,10 +225,15 @@ footer a {
     font-family: roboto light;
     font-size: 1.5vw;
     color: #F9FAFF;
+    transition: all 0.2s ease;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #FFE366;
+}
+
+.title_footer {
+    padding: 0vw;
 }
 
 .colomn1, .colomn2 {
@@ -240,4 +268,78 @@ footer a:hover {
 
 .social_media_card:hover {
     transform: scale(1.05);
+}
+
+
+.progs_list {
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2vw;
+}
+
+.prog_card {
+    width: 100%;
+    height: 16vw;
+    border: #090209 solid 3px;
+    border-radius: 3vw;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.8vw);
+    overflow: hidden;
+    flex-direction: column;
+    transition: all 0.2s ease;
+}
+
+.prog_card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.decoration_prog_card_science {
+    width: 3vw;
+    height: 100%;
+    border-right: #090209 solid 3px;
+    background-color: rgba(237, 182, 1, 0.5);
+    position: absolute;
+    display: flex;
+    left: 0; top: 0;
+}
+.decoration_prog_card_sport {
+    width: 3vw;
+    height: 100%;
+    border-right: #090209 solid 3px;
+    background-color: rgba(142, 100, 193, 0.5);
+    position: absolute;
+    display: flex;
+    left: 0; top: 0;
+}
+.decoration_prog_card_art {
+    width: 3vw;
+    height: 100%;
+    border-right: #090209 solid 3px;
+    background-color: rgba(138, 12, 60, 0.5);
+    position: absolute;
+    display: flex;
+    left: 0; top: 0;
+}
+
+.prog_card h2 {
+    font-size: 2vw;
+    margin: 1vw;
+    padding-left: 3vw;
+    font-family: roboto regular;
+}
+
+.prog_card p {
+    font-size: 1.7vw;
+    margin: 1vw;
+    padding-left: 3vw;
+    font-family: roboto regular;
+}
+
+.close {
+    background-color: #d4d5d9;
 }

@@ -319,7 +319,7 @@ body {
 }
 
 .watch_all:hover {
-    text-decoration: underline;
+    color: #8E64C1;
 }
 
 .news {
@@ -417,10 +417,11 @@ footer a {
     font-family: roboto light;
     font-size: 1.5vw;
     color: #090209;
+    transition: all 0.2s ease;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #8E64C1;
 }
 
 .colomn1, .colomn2 {
