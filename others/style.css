@@ -150,7 +150,7 @@ main {
 }
 
 main h2 {
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 200;
     margin: 4vw 0 1.5vw 0;
 }
@@ -180,6 +180,15 @@ main p a {
 
 main a:hover {
     color: #8E64C1;
+}
+
+main img {
+    width: 85vw;
+    height: auto;
+}
+
+li a {
+    display: inline; 
 }
 
 .link img {
@@ -412,9 +421,14 @@ footer a:hover {
     font-family: roboto regular;
 }
 
-.news_card:hover, .expert_card:hover {
+.news_card:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+.expert_card:hover {
+    transform: scale(1.05);
+    cursor: default;
 }
 
 .expert_card img {
@@ -442,4 +456,12 @@ footer a:hover {
 
 .expert_card {
     height: 20vw;
+}
+
+li {
+    margin-block: 1vw;
+}
+
+.news_list a {
+    text-decoration: none;
 }
