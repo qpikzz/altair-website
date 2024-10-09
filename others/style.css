@@ -253,6 +253,10 @@ footer a {
     transition: all 0.2s ease;
 }
 
+.row_social_media a {
+    padding: 0;
+}
+
 footer a:hover {
     color: #FFE366;
 }
@@ -464,4 +468,35 @@ li {
 
 .news_list a {
     text-decoration: none;
+}
+
+.submit_an_application {
+    padding: 1vw 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8E64C1;
+    color: #F9FAFF;
+    border-radius: 4vw;
+    font-family: roboto light;
+}
+
+.submit_an_application a {
+    color: #F9FAFF;
+    text-decoration: none;
+    font-family: roboto medium;
+}
+
+.submit_an_application a:hover {
+    color: #FFE366;
+}
+
+.progs_list a {
+    margin: 0;
+    text-decoration: none;
+}
+
+.progs_list a:hover {
+    color: #090209;
 }

@@ -342,7 +342,7 @@ body {
     gap: 2vw;
 }
 
-.news_list a {
+.news_list a, .progs_list a {
     text-decoration: none;
     color: #090209;
 }
@@ -439,6 +439,10 @@ footer a:hover {
     flex-direction: row;
     margin: 0 0 0 3.8vw;
     gap: 1vw;
+}
+
+.row_social_media a {
+    padding: 0;
 }
 
 .social_media_card {
